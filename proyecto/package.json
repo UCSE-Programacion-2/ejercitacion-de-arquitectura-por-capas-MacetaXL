@@ -1,0 +1,26 @@
+{
+  "name": "ejercitacion-arquitectura-por-capas",
+  "version": "1.0.0",
+  "description": "API REST de partidos de futbol",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --env-file=.env app.js",
+    "dev": "node --watch --env-file=.env app.js",
+    "test": "jest --detectOpenHandles"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.0.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "mongodbMemoryServer": {
+    "version": "6.0.12"
+  }
+}
